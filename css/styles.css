@@ -230,7 +230,8 @@ a.logo-header {
     line-height: 1.19;
     letter-spacing: 0.04em;
 
-    transition: background-color var(--transition-dur-and-func); box-shadow var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func); 
+    box-shadow: var(--transition-dur-and-func);
 }
 
 .header-button:hover,
@@ -364,6 +365,8 @@ section {
 
     justify-content: center;
     align-items: center;
+
+    transition: var(--transition-dur-and-func);
 }
 
 .social-link:hover,
@@ -623,6 +626,11 @@ section .filters {
     overflow: auto;
     transform: translate(0, 100%);    
     transition: transform var(--transition-dur-and-func);
+}
+
+p.overlay {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .card-content {
