@@ -684,6 +684,7 @@ p.overlay {
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    
     background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
