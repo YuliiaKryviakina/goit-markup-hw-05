@@ -124,7 +124,7 @@ a.logo-header {
 
 .menu {
     position: relative;
-    transition: var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func);
 
     display: flex;
     align-items: flex-start;
@@ -157,6 +157,10 @@ a.logo-header {
     background-color: var(--pressed-state-color);
 }
 
+.menu.current-page {
+    color: var(--pressed-state-color);
+}
+
 .current-page:hover,
 .current-page:focus {
     color: var(--pressed-state-color);
@@ -174,7 +178,7 @@ a.logo-header {
 
     line-height: 1.5;
 
-    transition: var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func);
 }
 
 .contacts:hover,
@@ -230,8 +234,7 @@ a.logo-header {
     line-height: 1.19;
     letter-spacing: 0.04em;
 
-    transition: background-color var(--transition-dur-and-func); 
-    box-shadow: var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
 
 .header-button:hover,
@@ -366,7 +369,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    transition: var(--transition-dur-and-func);
+    transition: background-color var(--transition-dur-and-func);
 }
 
 .social-link:hover,
@@ -684,7 +687,7 @@ p.overlay {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    
+
     background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
